@@ -8,14 +8,6 @@
  *     * Return: On success 1.
  *      * On error, -1 is returned, and errno is set appropriately.
  *       */
-/**
-int main()
-*{
-*	char ch=0;
-*	_putchar(ch);
-*	return (0);
-}
-*/
 
 int _putchar(char c)
 {
