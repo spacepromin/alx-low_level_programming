@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int j = 0;
+	int startI = 0;
+	while (j <= 99)
+	{
+		int i = startI;
+		while (i <= 99)
+		{
+			if (i == j){}
+			else
+			{
+				int toPrint;
+
+				if (0 <= j && j <= 9)
+					toPrint = 48;
+				else
+					toPrint = j / 10 + 48;
+
+				putchar(toPrint);
+				putchar(j % 10 + 48);
+				purchar(' ');
+
+				if (0 <= i && i <= 9)
+					toPrint = 48;
+				else
+					toPrint = i / 10 + 48;
+
+				putchar(toPrint);
+				putchar(i % 10 + 48);
+
+				if (j == 98 && i == 99){}
+				else
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			i++;
+		}
+		j++;
+		startI++;
+	}
+	putchar('\n');
+	return (1);
+}
